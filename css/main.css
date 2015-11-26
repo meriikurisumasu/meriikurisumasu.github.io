@@ -1,0 +1,43 @@
+body {
+	background: url('../img/crisp-paper-ruffles.png');
+	font-family: 'Courier', serif;
+	padding-bottom: 100px;
+	margin: 50px;
+}
+
+.envelope {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   max-width: 500px; 
+   /*width: 100%;*/
+   margin-top: -250px; /* need to use sass division for responsiveness */ 
+   margin-left: -250px; /* need to use sass division */
+}
+
+#opencard {
+   display: none;
+   margin-bottom: 25px;
+}
+
+#go {
+	width: 100px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: #e14490;
+	color: white;
+	font-size: 15px;
+	display: none;
+	text-align: center;
+
+}
+
+#revealed {
+	text-align: center;
+}
+
+/*@media screen and (min-width: 480px) {
+	.envelope {
+
+	}
+}*/

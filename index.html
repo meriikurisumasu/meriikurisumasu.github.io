@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Merry Christmas, jsunny00!</title>
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+	<div id="card">
+		<img src="img/envelope.png" class="envelope">
+		<div id="revealed">	
+			<img src="img/card.jpg" id="opencard">
+			<div><button type="button" id="go" >Go!</button></div>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script>
+		$('.envelope').on('click', openEnvelope);
+		function openEnvelope() {
+			$('.envelope').attr('src','img/envelope_open.png').fadeOut(2000);
+
+			setTimeout(function(){
+				$('#opencard').fadeIn(2000);
+				$('#go').fadeIn(2000);
+			},2250);
+		}
+
+	</script>
+</body>
+</html>
